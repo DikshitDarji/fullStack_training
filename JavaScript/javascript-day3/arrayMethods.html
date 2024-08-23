@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body></body>
+<script>
+    //filter
+    let arr = [10,20,30,40,100,50,1];
+    let filterdArr = arr.filter((item)=>item!==100);
+    console.log(filterdArr);
+    //reduce
+    let sum = arr.reduce((acc,curr)=>{return acc+curr;},1000);
+    console.log(sum);
+
+//      acc curr
+    //  0    10     10
+    //  10   20     30
+    //  30   30     60
+    //  60   40     100
+    //  100  50     150
+
+    //find
+    let foundItem = arr.find((item)=>{ return item>20});
+    console.log(foundItem);
+
+    //some 
+    let hasEven = arr.some((item)=>item%2===0);  //if any condition is true then output will be true
+    console.log(hasEven);
+
+    //every
+    let evenArr = arr.every((item)=>item%2===0);
+    console.log(evenArr);
+</script>
+</html>

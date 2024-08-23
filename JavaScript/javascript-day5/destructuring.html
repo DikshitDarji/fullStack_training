@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Destructuring
+        // let arr = [10,20,30,40,50];
+        // // let [num1,num2,num3] = arr;
+        // let [n1,,n3] = arr;
+        // // console.log(num1,num2,num3);
+        // console.log(n1,n3);
+    
+        // let [num1,...newArr] = arr;  // ... = rest operator if it is left side of    = or on destructuring , and it it is on right side of = then it is called as spread operator
+        // console.log(num1,newArr);
+    
+    
+        // let arr2 = [10]
+        // let [number1,number2 = 100] = arr2;    //10, 100  100 is default value
+        // console.log(number1,number2);   //10 , undefined
+    
+    
+        // let obj = {
+        //     firstName:"Dikshit",
+        //     lastName:"Darji"
+        // } 
+
+        // let {firstName,lastName} = obj; //object key and the variable name should be same
+        // obj.firstName = "bihari"
+        // console.log(firstName,lastName);
+    
+    //    let {firstName} = 'xyz'
+    //     console.log(firstName)
+
+
+    let obj3 = {
+        firstName:"dikshit",
+        lastName:"darji",
+        age:21,
+        address:"udaipur"
+    }
+    let {firstName:a,lastName} = obj3;
+    console.log(a,lastName);
+    </script>
+</body>
+</html>

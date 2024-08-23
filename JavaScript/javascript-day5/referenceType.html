@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+</body>
+<script>
+    let arr1 = [10,20,30];  //array and objects are reference type datatype so both arr1 will also be change with arr2
+    let arr2 = arr1;
+    arr2.push(1000);
+    console.log(arr1===arr2);   //true
+
+    let num1 = 10;
+    let num2 = num1;
+    num2 +=10;
+    console.log(num1===num2);  //false
+
+
+    //spread operator
+
+    let arr3 = [1,2,3,4,5];
+    let arr4 = [...arr3];
+    arr4.push(6);
+    console.log(arr3===arr4);   //false
+</script>
+</html>

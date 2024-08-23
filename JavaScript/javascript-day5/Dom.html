@@ -1,0 +1,34 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="main" class="div1">hy</div>
+</body>
+<script>
+    //Dom - Document object model
+     
+     //selectors
+
+    //  console.log(document);
+  const myDiv =  document.getElementById("main");
+  console.log(myDiv);
+  myDiv.id = "container"
+//   console.log(myDiv);
+  console.log(myDiv.id);
+  console.log(myDiv.className);
+  myDiv.style.width = "200px"
+  myDiv.style.height = "100px"
+  myDiv.style.backgroundColor = "grey"
+  myDiv.style.textAlign = "center"
+  myDiv.style.paddingTop = "60px"
+  myDiv.style.borderRadius = "40px"
+
+  console.log(myDiv.getAttribute("id"));
+  console.log(myDiv.setAttribute("id","first"));
+  console.log(myDiv);
+
+</script>
+</html>

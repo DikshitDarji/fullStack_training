@@ -1,0 +1,44 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let obj ={
+        firstName:"Dikshit",
+        lastName:"Darji"
+    }
+    //keys
+    let keys = Object.keys(obj);
+    console.log(keys);
+    //values
+    let values = Object.values(obj);
+    console.log(values);
+
+    //entries
+    let entries = Object.entries(obj);
+    console.log(entries);
+
+     //freeze
+     Object.freeze(obj);   //values can't be change  nor attributes are added
+     obj.firstName = "dhanesh";
+     console.log(obj);
+
+     const object = {
+        firstName:"Dhanesh",
+        lastName:"Joshi",
+     }
+     object.firstName = 'vinay'
+     console.log(object);
+
+     //seal   -  values can be change but new attributes cant be add
+     Object.seal(object);
+     object.firstName = "dikshit";
+     console.log(object);
+     console.log(object.hasOwnProperty("gender"));         //false
+</script>
+</html>
