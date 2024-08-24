@@ -1,0 +1,21 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="main">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit, adipisci.</div>
+</body>
+<script>
+    myDiv = document.getElementById('main');
+    console.log(myDiv.getAttribute('id'));
+    myDiv.setAttribute('class','container');
+    console.log(myDiv.getAttribute('class'));
+  
+    myDiv.style.color = 'red'
+    myDiv.innerText = 'Dikshit'
+    myDiv.setAttribute('style','background-color:green');  //setAttribute will replace the old styling
+
+</script>
+</html>

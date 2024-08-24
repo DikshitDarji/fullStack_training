@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="main" class="div1">
+       <div class="head">item-1</div>
+       <div class="head">item-2</div>
+       <div class="head">item-3</div>
+       <div class="head">item-4</div>
+       <div class="head">item-5</div>
+       <div class="head">item-6</div>
+    </div>
+</body>
+<script>
+    const myDiv = document.getElementById('main');
+    console.log(myDiv.innerHTML);
+    console.log(myDiv.innerText);
+    console.log(myDiv.textContent);
+
+    const myClass = document.getElementsByClassName('head');
+    console.log(myClass)
+    mydiv = document.getElementsByTagName('div');
+
+    // let colorArr = ['red','green','yellow','skyblue','blue','black','orange']
+    // for(let i=0;i<=mydiv.length;i++){
+    //  mydiv[i].style.padding = '20px'
+    //  mydiv[i].style.margin = '10px'
+    //  mydiv[i].style.backgroundColor = colorArr[i];
+    //  mydiv[i].style.borderRadius = `${i*10}px`
+    // }
+
+   //querySelectors
+   console.log(document.querySelector('.head'));
+   console.log(document.querySelectorAll('.head'));
+
+   
+</script>
+</html>
