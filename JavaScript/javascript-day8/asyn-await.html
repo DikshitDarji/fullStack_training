@@ -1,0 +1,30 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+function fetchApi() {
+  let data = fetch("https://fakestoreapi.com/products");
+  console.log("hello techno");
+  return data;
+}
+let fetchapi = fetchApi();
+fetchapi
+  .then(res => {
+    console.log(res.json());
+  })
+  .catch(error => {
+    console.log(error);
+  });
+
+    async function fetchData() {
+        let response = await fetch('https://fakestoreapi.com/products');
+        console.log(response);
+    }
+</script>
+</html>
