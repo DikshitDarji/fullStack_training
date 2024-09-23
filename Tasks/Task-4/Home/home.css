@@ -729,6 +729,70 @@
     width: 150vh;
     height: 50vh;
     background-color: white;
+    display: flex;    
+
+}
+
+.footer-1 .footer1-imagePart{
+    width: 35%;
+    height: 100%;
+    /* background-color: black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer1-imagePart .footer1-img{
+    width: 70%;
+    height: 70%;
+    /* border: 2px solid green; */
+    margin-left: 30px;
+    background:url('https://assets.nicepagecdn.com/11a8ddce/3667110/images/pexels-photo-733500copy.jpg');
+    background-size: cover;
+    background-position: 55%;
+    border-radius: 50%;
+}
+.footer1-img .footer1-circle{
+    width: 120px;
+    height: 120px;
+    background-color: #2590f4;
+    border-radius: 50%;
+    margin:-20px 0px 0px -55px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer1-circle img{
+    width: 60px;
+}
+.footer1-textPart{
+    width: 70%;
+    /* background-color: black; */
+    /* border: 2px solid green; */
+    height: 100%;
+    padding-right: 90px;
+}
+.footer1-para{
+    margin-top: 50px;
+}
+.footer1-para a{
+    text-decoration: none;
+    color: #2590f4;
+}
+#footer1-heading{
+    font-size: 2rem;
+}
+#footer1-heading i{
+    color: #2590f4;
+}
+#footer1-heading:hover{
+    color: #2590f4;
+    cursor: pointer;
+}
+#footer1-p1{
+    font-family: Montserrat, sans-serif !important;
+    font-size: 1.5rem;
+    line-height: 1.6;
+    font-weight: 400;
 }
 .footer-2{
     width: 100%;
